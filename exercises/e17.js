@@ -10,7 +10,7 @@
 
 export function minBy(array, cb) {
   // Your code goes here...
-  if (array.length === 0) {
+  if (!array.length) {
     return undefined;
   }
 
@@ -29,7 +29,7 @@ export function minBy(array, cb) {
 
 export function maxBy(array, cb) {
   // Your code goes here...
-  if (array.length === 0) {
+  if (!array.length) {
     return undefined;
   }
 

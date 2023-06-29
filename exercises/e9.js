@@ -6,10 +6,9 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
-  const planetEarth = data.planets.find(
-    (planet) => planet.name.toLowerCase() === "earth"
+  return (
+    data.planets.find((planet) => planet.name.toLowerCase() === "earth") || null
   );
-  return planetEarth || null;
 }
 
 // === TEST YOURSELF ===

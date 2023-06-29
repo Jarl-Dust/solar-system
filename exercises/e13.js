@@ -10,8 +10,7 @@ export function getAveragePlanetsTemperature(data) {
     return totalTemp + planet.avgTemp;
   }, 0);
 
-  const galaxyAvgPlanetTemp = sumTemp / data.planets.length;
-  return galaxyAvgPlanetTemp;
+  return sumTemp / data.planets.length;
 }
 
 // === TEST YOURSELF ===
