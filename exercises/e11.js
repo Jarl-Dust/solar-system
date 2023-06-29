@@ -7,6 +7,11 @@ import { data } from "../data/data";
 
 export function lowMoonsPlanets(data) {
   // Your code goes here...
+  const lowMoonPlanets = data.planets
+    .filter((planet) => planet.moonsCount < 10 || !planet.moonsCount)
+    .map((planet) => planet.name);
+
+  return lowMoonPlanets;
 }
 
 // === TEST YOURSELF ===

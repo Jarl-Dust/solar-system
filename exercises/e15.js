@@ -6,9 +6,12 @@ import { data } from "../data/data";
 
 export function getPlanetsWithNoMoons(data) {
   // Your code goes here...
+  const moonlessPlanets = data.planets
+    .filter((planet) => !planet.moonsCount)
+    .map((planet) => planet.name);
+
+  return moonlessPlanets;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-15"
